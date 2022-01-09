@@ -1,6 +1,11 @@
 {
   "name": "food-order-website",
   "private": true,
+  "author": {
+    "email": "kfasunle@gmail.com",
+    "name": "Kehinde Fasunle",
+    "url": "https://github.com/Fasunle/pizza-order-website.git"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",

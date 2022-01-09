@@ -8,7 +8,7 @@ export default function Home() {
       <Head>
         <title>Food Order App in Uyo</title>
         <meta name="description" content="the best pizza in Nigeria" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/img/logo.png" />
       </Head>
 
       <main className={styles.main}>

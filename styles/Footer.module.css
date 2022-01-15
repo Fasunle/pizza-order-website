@@ -1,0 +1,34 @@
+.container{
+    height: calc(100vh - 100px);
+    background-color: #222111;
+    display: flex;
+
+}
+
+.item{
+    flex: 1;
+    position: relative;
+    display: flex;
+
+}
+.item:last-child{
+    flex: 2;
+    justify-content: space-between;
+}
+.card{
+    flex: 1;
+    padding: 0 1.25rem;
+}
+
+.motto{
+    color: #d3d3d3;
+
+}
+
+.address_title, .working_hours{
+color: #b7903c;
+}
+
+.text{
+    color: lightgray;
+}

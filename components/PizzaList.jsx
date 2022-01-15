@@ -13,9 +13,8 @@ const PizzaList = ({ pizzalist }) => {
         illo dolore.
       </p>
       <div className={styles.wrapper}>
-        {pizzalist.map((pizza, id) => (
-          <PizzaCard key={id} {...pizza} />
-        ))}
+        {pizzalist &&
+          pizzalist.map((pizza, id) => <PizzaCard key={id} {...pizza} />)}
       </div>
     </div>
   );

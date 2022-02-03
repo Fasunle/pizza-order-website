@@ -1,0 +1,9 @@
+.imgContainer{
+    height: 6.25rem;
+    width: 6.25rem;
+    position: relative;
+}
+
+.table{
+    border-spacing: 2.25rem;
+}

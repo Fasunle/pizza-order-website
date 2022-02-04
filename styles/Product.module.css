@@ -1,0 +1,102 @@
+.container{
+    height: calc(100vh - 6.25rem);
+    display: flex;
+    align-items: center;
+}
+.imgContainer{
+    position: relative;
+    height: 80%;
+    width: 80%;
+}
+
+.left{
+    flex: 1;
+    padding: 4rem;
+    height: 100%;
+}
+
+.right{
+    flex: 2;
+    align-self: flex-start;
+}
+
+.sizes{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    height: max-content;
+}
+
+.size{
+    position: relative;
+    height: 1.875rem;
+    width: 1.875rem;
+    border-style: none;
+    background-color: transparent;
+}
+
+.size:nth-child(2){
+    height: 2.5rem;
+    width: 2.5rem;
+}
+.size:last-child{
+    height: 3.125rem;
+    width: 3.125rem;
+}
+
+.small,.medium,.large{
+    position: absolute;
+    top: -10px;
+    right: -20px;
+    background-color: teal;
+    color: whitesmoke;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    padding: 0.25rem;
+}
+
+.price{
+    color: #d1411e;
+    border-bottom:0.0625rem solid #d1411e;
+}
+
+.ingredients{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.option{
+    margin-right: 0.625rem;
+    display: flex;
+    align-items: center;
+}
+.option input{
+    height: 1.25rem;
+    width: 1.25rem;
+}
+.add{
+    display: flex;
+    align-items: center;
+}
+.number,.btn{
+    height: 2.125rem;
+}
+.number{
+    outline: 0.0625rem #d1411e solid;
+    outline-offset: -0.0625rem;
+    /* border: none; */
+}
+.btn{
+    border: none;
+    background-color: #d1411e;
+    color: azure;
+    padding: 0 2rem;
+    font-size: 1.5rem;
+}
+
+.btn:hover{
+    background-color: #a03317;
+    color: #f5f5f5;
+    cursor: pointer;
+}

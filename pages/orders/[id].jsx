@@ -1,5 +1,5 @@
 import styles from "../../styles/Order.module.css";
-import OrderTable from "../../components/OrderTable";
+import CustomerDetails from "../../components/CustomerDetails";
 import { discountedTotalPrice } from "../../utils";
 
 const cart = [
@@ -39,7 +39,7 @@ const Order = () => {
   return (
     <div className={styles.container}>
       <div className={styles.left}>
-        <OrderTable order={order} />
+        <CustomerDetails order={order} />
       </div>
       <div className={styles.right}>
         <h2 className={styles.cartTitle}>Order Total</h2>

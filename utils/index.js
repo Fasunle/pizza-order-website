@@ -7,3 +7,6 @@ export const cartTotalPrice = (cart) => {
 };
 
 export const getDiscount = (total, d = 0.05) => total - total * d;
+
+export const discountedTotalPrice = (cart = [], d = 0.05) =>
+  getDiscount(cartTotalPrice(cart), d);

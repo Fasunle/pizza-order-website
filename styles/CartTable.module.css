@@ -6,4 +6,6 @@
 
 .table{
     border-spacing: 2.25rem;
+    width: 100%;
+    text-align: end;
 }

@@ -1,6 +1,8 @@
-# pizza-order-website
+pizza-order-website
 
 E-commerce application with nextjs SEO
+
+[to interact with this website, click here](https://61fcf3e8d9ea3e8349fd8c7b--romantic-heisenberg-198567.netlify.app/)
 
 Landing page
 
@@ -17,7 +19,6 @@ About page (footer)
 Single product page
 
 ![image](https://user-images.githubusercontent.com/77301273/152502553-dba8d90f-dd8d-4c95-a95a-cacbb96e887a.png)
-
 
 order page
 

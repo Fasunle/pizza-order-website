@@ -1,0 +1,58 @@
+.container{
+    height: calc(100vh - 6.25rem);
+    display: flex;
+    padding: 3rem;
+}
+
+.left{
+    flex: 2;
+}
+
+.right{
+    flex: 1;
+    max-height: min-content ;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0.4rem;
+    color: #fff;
+    background-color: #000;
+}
+
+.imgContainer{
+    height: 6.25rem;
+    width: 6.25rem;
+    position: relative;
+}
+
+.table{
+    border-spacing: 2.25rem;
+}
+
+.cartTitle{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.cartDiscount{
+    margin-bottom: 0.3rem;
+}
+
+.discount{
+    color: #04a104;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.checkout{
+    margin: 0.4rem 0;
+    align-self: center;
+    height: 2rem;
+    min-width: 70%;
+    border: none;
+    font-size: 1.25rem;
+    color: green;
+    background-color: white;
+    font-weight: 600;
+}

@@ -1,4 +1,3 @@
-import { Fragment } from "react";
 import styles from "../styles/Pizzalist.module.css";
 import PizzaCard from "./PizzaCard";
 

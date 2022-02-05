@@ -24,14 +24,14 @@ const Featured = ({ urls = [] }) => {
         className={styles.wrapper}
         style={{ transform: `translateX(${-100 * pageNumber}vw)` }}>
         {urls.map((url, id) => (
-          <div className={styles.imageContainer} key={id}>
+          <span className={styles.imageContainer} key={id}>
             <Image
               src={`/img/${url}`}
               layout="fill"
               objectFit="contain"
               alt=""
             />
-          </div>
+          </span>
         ))}
       </div>
       <div

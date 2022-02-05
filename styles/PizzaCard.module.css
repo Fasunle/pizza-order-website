@@ -21,3 +21,12 @@
     text-align: center;
     color: #777;
 }
+
+@media (max-width: 480px) {
+    .container{
+        width: auto;
+    }
+    .desc{
+        font-size: 1.23rem;
+    }
+}

@@ -32,3 +32,10 @@
     width: 100vw;
     position: relative;
 }
+
+@media (max-width: 480px) {
+    .container{
+        height: calc(50vh - 6.25rem);
+        position: relative;
+    }
+}

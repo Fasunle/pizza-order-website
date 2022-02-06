@@ -72,3 +72,19 @@
     justify-content: center;
     background-color: #fff;
 }
+
+@media (max-width: 480px) {
+    .item:nth-child(2){
+        display: none;
+    }
+    .item:nth-child(1){
+        flex: 3;
+    }
+    .text{
+        font-size: 1.1rem;
+    }
+    .container{
+        padding: 0.5rem;
+    }
+    
+}

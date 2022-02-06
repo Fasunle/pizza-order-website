@@ -1,0 +1,3 @@
+.container{
+    overflow: hidden;   /* prevent overflow of Featured component*/ 
+}

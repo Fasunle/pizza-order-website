@@ -16,3 +16,11 @@
     color: green;
     font-family: "Times New Roman", serif;
 }
+
+.customer_info ul{
+    padding: 0;
+}
+
+.customer_info span{
+    font-weight: bold;
+}

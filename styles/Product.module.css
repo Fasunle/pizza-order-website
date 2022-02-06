@@ -100,3 +100,50 @@
     color: #f5f5f5;
     cursor: pointer;
 }
+
+@media (max-width: 480px) {
+    .container{
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    .left{
+        width: 100%;
+        min-height: 50%;
+        padding: 1rem;
+    }
+    .imgContainer{
+        width: 100%;
+        height: 100%;
+    }
+    .right{
+        flex: 1;
+        text-align: center;
+        align-self: center;
+    }
+    .desc,.price{
+        font-size: 1.3rem;
+    }
+    .sizes{
+        width: 100%;
+        justify-content: space-around;
+    }
+    .ingredients{
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .option{
+    margin: 0.625rem 0;
+    padding-left: 0.625rem;
+    }
+    .option input{
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    .option label{
+        font-size: 1.4rem;
+    }
+    .add{
+        margin-bottom: 1rem;
+    }
+}

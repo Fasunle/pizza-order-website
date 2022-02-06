@@ -27,7 +27,7 @@ const Product = () => {
         <h2 className={styles.title}>{pizza.name}</h2>
         <span className={styles.price}>${pizza.price[size]}</span>
         <p className={styles.desc}>{pizza.desc}</p>
-        <h3 className={styles.choose}>Choose Pizza size</h3>
+        <h2 className={styles.choose}>Choose Pizza size</h2>
         <div className={styles.sizes}>
           <button className={styles.size} onClick={() => setSize(0)}>
             <Image src="/img/size.png" layout="fill" alt="small sized pizza" />
@@ -42,7 +42,7 @@ const Product = () => {
             <span className={styles.large}>Large</span>
           </button>
         </div>
-        <h3 className={styles.additional}>Choose Additional Ingredients</h3>
+        <h2 className={styles.additional}>Choose Additional Ingredients</h2>
         <div className={styles.ingredients}>
           <div className={styles.option}>
             <input type="checkbox" name="double" id="double" />

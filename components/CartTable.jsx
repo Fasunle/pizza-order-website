@@ -4,47 +4,69 @@ import styles from "../styles/CartTable.module.css";
 
 const CartTable = ({ cart }) => {
   return (
-    <table className={styles.table}>
-      <thead>
-        <th>Product</th>
-        <th>Name</th>
-        <th>Extra</th>
-        <th>Price</th>
-        <th>Quantity</th>
-        <th>Total</th>
-      </thead>
-      <tbody>
+    <>
+      <table className={styles.table}>
+        <thead>
+          <th>Product</th>
+          <th>Name</th>
+          <th>Extra</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Total</th>
+        </thead>
+        <tbody>
+          {cart.map((cartItem, id) => (
+            <tr key={id}>
+              <td>
+                <div className={styles.imgContainer}>
+                  <Image
+                    src="/img/pizza.png"
+                    alt="product image"
+                    layout="fill"
+                    objectFit="cover"
+                  />
+                </div>
+              </td>
+              <td>
+                <span className={styles.name}>{cartItem.name}</span>
+              </td>
+              <td>
+                <span className={styles.extra}>{cartItem.extra}</span>
+              </td>
+              <td>
+                <span className={styles.price}>{cartItem.price}</span>
+              </td>
+              <td>
+                <span className={styles.quantity}>{cartItem.quantity}</span>
+              </td>
+              <td>
+                <span className={styles.total}>{cartItem.total}</span>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      {/* mobile view @ 480px */}
+      <div className={styles.mobileTable}>
         {cart.map((cartItem, id) => (
-          <tr key={id}>
-            <td>
-              <div className={styles.imgContainer}>
-                <Image
-                  src="/img/pizza.png"
-                  alt="product image"
-                  layout="fill"
-                  objectFit="cover"
-                />
-              </div>
-            </td>
-            <td>
-              <span className={styles.name}>{cartItem.name}</span>
-            </td>
-            <td>
-              <span className={styles.extra}>{cartItem.extra}</span>
-            </td>
-            <td>
-              <span className={styles.price}>{cartItem.price}</span>
-            </td>
-            <td>
-              <span className={styles.quantity}>{cartItem.quantity}</span>
-            </td>
-            <td>
-              <span className={styles.total}>{cartItem.total}</span>
-            </td>
-          </tr>
+          <div key={id} className={styles.cartItem}>
+            <div className={styles.imgContainer}>
+              <Image
+                src="/img/pizza.png"
+                alt="product image"
+                layout="fill"
+                objectFit="cover"
+              />
+            </div>
+            <h3 className={styles.name}>{cartItem.name}</h3>
+            <h4 className={styles.extra}>Extra: {cartItem.extra}</h4>
+            <b className={styles.price}>Price: {cartItem.price}</b>
+            <h4 className={styles.quantity}>Quantity: {cartItem.quantity}</h4>
+            <h4 className={styles.total}>Total: {cartItem.total}</h4>
+          </div>
         ))}
-      </tbody>
-    </table>
+      </div>
+    </>
   );
 };
 

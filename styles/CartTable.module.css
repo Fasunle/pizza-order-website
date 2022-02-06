@@ -10,6 +10,10 @@
     text-align: end;
 }
 
+.mobileTable{
+    display: none;
+}
+
 @media (max-width: 480px) {
     .table{display: none;}
 

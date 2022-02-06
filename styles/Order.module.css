@@ -56,3 +56,24 @@
     background-color: white;
     font-weight: 600;
 }
+
+@media (max-width: 480px) {
+    .container{
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .right{
+        width: 100%;
+        flex: 2.5;
+        font-size: 1.45rem;
+
+    }
+
+    .checkout{
+        margin-top: 3rem;
+        width: 100%;
+        font-size: 1.45rem;
+    }
+    
+}

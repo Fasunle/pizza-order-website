@@ -9,3 +9,26 @@
     width: 100%;
     text-align: end;
 }
+
+@media (max-width: 480px) {
+    .table{display: none;}
+
+    .mobileTable{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 1rem 0;
+    }
+
+    .cartItem{
+        font-size: 1.3rem;
+    }
+
+    .imgContainer{
+        width: 18.75rem;
+        height: 18.75rem;
+        margin-bottom: 1rem;
+    }
+}

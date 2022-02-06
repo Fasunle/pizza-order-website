@@ -46,3 +46,22 @@
     background-color: white;
     font-weight: 500;
 }
+
+@media (max-width: 480px) {
+    
+    .container{
+        flex-direction: column;
+        padding: 0;
+        min-height: 100vh;
+    }
+
+    .imgContainer{
+        position: relative;
+        margin: auto;
+    }
+
+    .left{
+        display: flex;
+        width: 100vw;
+    }
+}

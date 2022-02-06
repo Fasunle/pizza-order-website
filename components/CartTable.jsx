@@ -17,19 +17,31 @@ const CartTable = ({ cart }) => {
         <tbody>
           {cart.map((cartItem, id) => (
             <tr key={id}>
-              <div className={styles.imgContainer}>
-                <Image
-                  src="/img/pizza.png"
-                  alt="product image"
-                  layout="fill"
-                  objectFit="cover"
-                />
-              </div>
-              <span className={styles.name}>{cartItem.name}</span>
-              <span className={styles.extra}>{cartItem.extra}</span>
-              <span className={styles.price}>{cartItem.price}</span>
-              <span className={styles.quantity}>{cartItem.quantity}</span>
-              <span className={styles.total}>{cartItem.total}</span>
+              <td>
+                <div className={styles.imgContainer}>
+                  <Image
+                    src="/img/pizza.png"
+                    alt="product image"
+                    layout="fill"
+                    objectFit="cover"
+                  />
+                </div>
+              </td>
+              <td>
+                <span className={styles.name}>{cartItem.name}</span>
+              </td>
+              <td>
+                <span className={styles.extra}>{cartItem.extra}</span>
+              </td>
+              <td>
+                <span className={styles.price}>{cartItem.price}</span>
+              </td>
+              <td>
+                <span className={styles.quantity}>{cartItem.quantity}</span>
+              </td>
+              <td>
+                <span className={styles.total}>{cartItem.total}</span>
+              </td>
             </tr>
           ))}
         </tbody>
